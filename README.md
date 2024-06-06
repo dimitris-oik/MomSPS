@@ -17,17 +17,17 @@ pip install momsps
 
 ## Usage
 
-Import the optimizers in Python with
+Import the optimizers (with their default hyper-parameters) in Python with
 
 ``` python
 from momsps import MomSPS
-opt = MomSPS(model.parameters(), lr=1)
+opt = MomSPS(model.parameters())
 ```
 or
 
 ``` python
 from momsps import MomSPS_smooth
-opt = MomSPS_smooth(model.parameters(), lr=1)
+opt = MomSPS_smooth(model.parameters())
 ```
 
 **Important: you only need to adapt one line of your training script, described below.** 
