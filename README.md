@@ -3,7 +3,7 @@ This is the official repository for the code used to run the experiments in the 
 
 
 **Stochastic Polyak Step-sizes and Momentum: Convergence Guarantees and Practical Performance**\
-*D. Oikonomou, N. Loizou*
+*D. Oikonomou, N. Loizou*\
 Paper: https://arxiv.org/abs/2406.04142
 
 
