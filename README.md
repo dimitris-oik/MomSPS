@@ -4,6 +4,7 @@ This is the official repository for the code used to run the experiments in the 
 
 **Stochastic Polyak Step-sizes and Momentum: Convergence Guarantees and Practical Performance**\
 *D. Oikonomou, N. Loizou*
+Paper: https://arxiv.org/abs/2406.04142
 
 
 ## Installation
@@ -62,9 +63,10 @@ For a complete description of our experiments, please see the paper. In the left
 If you find our work useful, please consider citing our paper.
 
 ```
-@article{Oikonomou2024,
-  author        = {Dimitris Oikonomou and Nicolas Loizou},
-  title         = {Stochastic Polyak Step-sizes and Momentum: Convergence Guarantees and Practical Performance},
-  year          = {2024},
+@article{oikonomou2024stochastic,
+  title={Stochastic Polyak Step-sizes and Momentum: Convergence Guarantees and Practical Performance},
+  author={Oikonomou, Dimitris and Loizou, Nicolas},
+  journal={arXiv preprint arXiv:2406.04142},
+  year={2024}
 }
 ```
