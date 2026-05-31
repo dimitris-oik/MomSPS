@@ -2,7 +2,6 @@
 
 **Adaptive Polyak step sizes for Stochastic Heavy Ball — no learning-rate tuning required.**
 
-[![Paper: ICLR 2025](https://img.shields.io/badge/Paper-ICLR%202025-1f6feb)](https://openreview.net/forum?id=4M2H6mPFAk)
 [![arXiv](https://img.shields.io/badge/arXiv-2406.04142-b31b1b)](https://arxiv.org/abs/2406.04142)
 [![PyPI](https://img.shields.io/pypi/v/momsps)](https://pypi.org/project/momsps/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -83,7 +82,7 @@ optimizer = MomSPS_smooth(
 
 ## The algorithm
 
-Given a mini-batch loss $f_{S_t}$ and momentum coefficient $\beta$, **MomSPS$_{\max}$** sets
+Given a mini-batch loss $f_{S_t}$ and momentum coefficient $\beta$, **MomSPS<sub>max</sub>** sets
 
 $$\gamma_t = (1 - \beta) \cdot \min\left\\{ \frac{f_{S_t}(x^t) - \ell^*_{S_t}}{c \\, \\|\nabla f_{S_t}(x^t)\\|^2},\ \gamma_b \right\\}$$
 
@@ -93,14 +92,13 @@ $$x^{t+1} = x^t - \gamma_t \\, \nabla f_{S_t}(x^t) + \beta (x^t - x^{t-1}).$$
 
 The smoothed variant **MomSPS_smooth** replaces the constant cap $\gamma_b$ by an iteration-dependent cap $\gamma_b^t = \tau^{b/n} \gamma_{t-1}$ with $\tau \approx 2$, which empirically yields more stable schedules on deep networks.
 
-Key theoretical properties (full statements: Theorems 3.2, 3.6, 3.7 of the paper):
+Key theoretical properties of MomSPS<sub>max</sub> (full statements: Theorems 3.2, Corollary 3.3, Corollary 3.4 of the paper):
 
-| Property | MomSPS$_{\max}$ |
+| Property | MomSPS<sub>max</sub> |
 |---|---|
 | Convex, smooth, non-interpolated | $O(1/T)$ to a neighborhood |
-| Convex, smooth, interpolated | $O(1/T)$ to the exact minimizer |
 | Deterministic Heavy Ball ($S_t = [n]$) | $O(1/T)$ to the exact minimizer |
-| Reduces to SPS$_{\max}$ when $\beta=0$ | yes (tight) |
+| Convex, smooth, interpolated | $O(1/T)$ to the exact minimizer |
 
 ---
 
