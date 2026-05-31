@@ -2,8 +2,8 @@
 
 **Adaptive Polyak step sizes for Stochastic Heavy Ball — no learning-rate tuning required.**
 
-[![arXiv](https://img.shields.io/badge/arXiv-2406.04142-b31b1b)](https://arxiv.org/abs/2406.04142)
 [![PyPI](https://img.shields.io/pypi/v/momsps)](https://pypi.org/project/momsps/)
+[![arXiv](https://img.shields.io/badge/arXiv-2406.04142-b31b1b)](https://arxiv.org/abs/2406.04142)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
